@@ -4,64 +4,71 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Portfolio - Raphaël Bigey</title>
-  <link rel="stylesheet" href="style-academique.css">
+  <link rel="stylesheet" href="style-tech.css">
 </head>
 <body>
 
-  <!-- Header -->
-  <header>
-    <h1>Raphaël Bigey</h1>
-    <nav>
-      <ul>
-        <li><a href="#accueil">Accueil</a></li>
-        <li><a href="#parcours">Parcours</a></li>
-        <li><a href="#projets">Projets</a></li>
-        <li><a href="#cv">CV</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
-    </nav>
-  </header>
-
-  <!-- Hero -->
-  <section id="accueil" class="hero">
-    <h2>Étudiant en Master 2 Modélisation et Analyse Numérique</h2>
-    <p>Université de Montpellier</p>
-    <div class="buttons">
-      <a href="#projets" class="btn">Voir mes projets</a>
-      <a href="#cv" class="btn">Télécharger mon CV</a>
-    </div>
-  </section>
-
-  <!-- Parcours -->
-  <section id="parcours">
-    <h2>Parcours</h2>
-    <ul class="timeline">
-      <li><strong>2023–2025 :</strong> Master Modélisation et Analyse Numérique – Université de Montpellier</li>
-      <li><strong>2020–2023 :</strong> Licence Mathématiques Appliquées</li>
+  <!-- Side Navigation -->
+  <nav id="sideNav">
+    <h2>RB</h2>
+    <ul>
+      <li><a href="#accueil">🏠</a></li>
+      <li><a href="#parcours">🎓</a></li>
+      <li><a href="#projets">💻</a></li>
+      <li><a href="#cv">📜</a></li>
+      <li><a href="#contact">✉️</a></li>
     </ul>
-  </section>
+  </nav>
 
-  <!-- Projets -->
-  <section id="projets">
-    <h2>Projets</h2>
-    <div class="grid">
-      <div class="card">
-        <h3>Équation de Burgers</h3>
-        <p>Simulation en C++ avec conditions initiales variées.</p>
+  <!-- Content -->
+  <main>
+    <!-- Hero -->
+    <section id="accueil" class="hero">
+      <h1>Raphaël Bigey</h1>
+      <h2>Master 2 – Modélisation & Analyse Numérique</h2>
+      <div class="buttons">
+        <a href="#projets" class="btn">Mes projets</a>
+        <a href="#cv" class="btn">Télécharger CV</a>
       </div>
-      <div class="card">
-        <h3>Shape from Shading</h3>
-        <p>Implémentation en Python d’une méthode de point fixe.</p>
-      </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- Contact -->
-  <section id="contact">
-    <h2>Contact</h2>
-    <p>Email : <a href="mailto:raphael.bigey@example.com">raphael.bigey@example.com</a></p>
-    <p><a href="https://www.linkedin.com" target="_blank">LinkedIn</a> | <a href="https://github.com" target="_blank">GitHub</a></p>
-  </section>
+    <!-- Parcours -->
+    <section id="parcours">
+      <h2>Parcours</h2>
+      <div class="timeline">
+        <div class="event">
+          <span>2023–2025</span>
+          <p>Master Modélisation et Analyse Numérique – Université de Montpellier</p>
+        </div>
+        <div class="event">
+          <span>2020–2023</span>
+          <p>Licence Mathématiques Appliquées</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projets -->
+    <section id="projets">
+      <h2>Projets</h2>
+      <div class="grid">
+        <div class="card">
+          <h3>Shape from Shading</h3>
+          <p>Méthode de point fixe en Python pour la reconstruction 3D.</p>
+        </div>
+        <div class="card">
+          <h3>Équation de Burgers</h3>
+          <p>Implémentation en C++ avec conditions initiales gaussiennes.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact">
+      <h2>Contact</h2>
+      <p>Email : <a href="mailto:raphael.bigey@example.com">raphael.bigey@example.com</a></p>
+      <p><a href="https://www.linkedin.com" target="_blank">LinkedIn</a> | <a href="https://github.com" target="_blank">GitHub</a></p>
+    </section>
+  </main>
 
 </body>
 </html>
