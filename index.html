@@ -4,70 +4,71 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Portfolio - Raphaël Bigey</title>
-  <link rel="stylesheet" href="style-tech.css">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-  <!-- Side Navigation -->
-  <nav id="sideNav">
-    <h2>RB</h2>
-    <ul>
-      <li><a href="#accueil">🏠</a></li>
-      <li><a href="#parcours">🎓</a></li>
-      <li><a href="#projets">💻</a></li>
-      <li><a href="#cv">📜</a></li>
-      <li><a href="#contact">✉️</a></li>
-    </ul>
-  </nav>
-
-  <!-- Content -->
-  <main>
-    <!-- Hero -->
-    <section id="accueil" class="hero">
+  <!-- Sidebar -->
+  <aside class="sidebar">
+    <div class="profile">
+      <img src="photo.jpg" alt="Photo de Raphaël">
       <h1>Raphaël Bigey</h1>
-      <h2>Master 2 – Modélisation & Analyse Numérique</h2>
-      <div class="buttons">
-        <a href="#projets" class="btn">Mes projets</a>
-        <a href="#cv" class="btn">Télécharger CV</a>
-      </div>
+      <p>Master 2 – Modélisation & Analyse Numérique</p>
+    </div>
+    <nav>
+      <ul>
+        <li><a href="#about">À propos</a></li>
+        <li><a href="#parcours">Parcours</a></li>
+        <li><a href="#projets">Projets</a></li>
+        <li><a href="#skills">Compétences</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </aside>
+
+  <!-- Main content -->
+  <main class="content">
+    
+    <section id="about">
+      <h2>À propos</h2>
+      <p>Je suis étudiant en Master 2 de Modélisation et Analyse Numérique à l’Université de Montpellier. 
+         Passionné par les mathématiques appliquées, l’analyse numérique et la simulation scientifique.</p>
     </section>
 
-    <!-- Parcours -->
     <section id="parcours">
       <h2>Parcours</h2>
-      <div class="timeline">
-        <div class="event">
-          <span>2023–2025</span>
-          <p>Master Modélisation et Analyse Numérique – Université de Montpellier</p>
-        </div>
-        <div class="event">
-          <span>2020–2023</span>
-          <p>Licence Mathématiques Appliquées</p>
-        </div>
-      </div>
+      <ul class="timeline">
+        <li><span>2023–2025</span> Master 2 – Modélisation et Analyse Numérique</li>
+        <li><span>2020–2023</span> Licence Mathématiques Appliquées</li>
+        <li><span>Stages</span> Projets de recherche appliquée et simulations numériques</li>
+      </ul>
     </section>
 
-    <!-- Projets -->
     <section id="projets">
       <h2>Projets</h2>
       <div class="grid">
         <div class="card">
-          <h3>Shape from Shading</h3>
-          <p>Méthode de point fixe en Python pour la reconstruction 3D.</p>
+          <h3>Équation de Burgers</h3>
+          <p>Implémentation en C++ avec schémas numériques et conditions initiales gaussiennes.</p>
         </div>
         <div class="card">
-          <h3>Équation de Burgers</h3>
-          <p>Implémentation en C++ avec conditions initiales gaussiennes.</p>
+          <h3>Shape from Shading</h3>
+          <p>Résolution par méthode de point fixe en Python pour la reconstruction 3D.</p>
         </div>
       </div>
     </section>
 
-    <!-- Contact -->
+    <section id="skills">
+      <h2>Compétences</h2>
+      <p>Python, C++, Matlab, Git, LaTeX, Méthodes Numériques, Simulation</p>
+    </section>
+
     <section id="contact">
       <h2>Contact</h2>
       <p>Email : <a href="mailto:raphael.bigey@example.com">raphael.bigey@example.com</a></p>
-      <p><a href="https://www.linkedin.com" target="_blank">LinkedIn</a> | <a href="https://github.com" target="_blank">GitHub</a></p>
+      <p><a href="https://github.com" target="_blank">GitHub</a> | <a href="https://www.linkedin.com" target="_blank">LinkedIn</a></p>
     </section>
+
   </main>
 
 </body>
