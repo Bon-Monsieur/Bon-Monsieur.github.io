@@ -1,113 +1,85 @@
-/* Reset */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
+* { margin: 0; padding: 0; box-sizing: border-box; }
 body {
-  font-family: "Roboto", sans-serif;
   display: flex;
-  min-height: 100vh;
+  font-family: 'Roboto', sans-serif;
+  color: #333;
 }
-
-/* Sidebar */
 .sidebar {
-  background: #c84c2a; /* Couleur principale (rouille/rouge brique) */
-  color: white;
   width: 260px;
+  background: #004080;
+  color: #fff;
   padding: 2rem 1rem;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
-
-.sidebar .profile img {
+.profile img {
   width: 120px;
   height: 120px;
   border-radius: 50%;
+  border: 3px solid #fff;
   margin-bottom: 1rem;
-  border: 4px solid white;
 }
-
 .sidebar h1 {
-  font-size: 1.4rem;
+  font-size: 1.5rem;
   margin-bottom: 0.5rem;
 }
-
 .sidebar p {
   font-size: 0.9rem;
   margin-bottom: 2rem;
   text-align: center;
 }
-
 .sidebar nav ul {
   list-style: none;
   width: 100%;
-  text-align: center;
 }
-
-.sidebar nav li {
-  margin: 1rem 0;
+.sidebar nav ul li {
+  margin: 0.8rem 0;
 }
-
-.sidebar nav a {
-  color: white;
+.sidebar nav ul a {
+  color: #fff;
   text-decoration: none;
-  font-weight: bold;
+  font-weight: 500;
   transition: color 0.3s;
 }
-
-.sidebar nav a:hover {
+.sidebar nav ul a:hover {
   color: #ffd27f;
 }
-
-/* Main content */
 .content {
   flex: 1;
   padding: 3rem;
   background: #f9f9f9;
 }
-
-.content h2 {
-  margin-bottom: 1rem;
-  color: #c84c2a;
-}
-
 .content section {
-  margin-bottom: 3rem;
+  margin-bottom: 4rem;
 }
-
-/* Timeline */
-.timeline {
-  list-style: none;
-}
-
-.timeline li {
+.content h2 {
+  font-size: 1.8rem;
+  color: #004080;
   margin-bottom: 1rem;
 }
-
-.timeline span {
-  font-weight: bold;
-  color: #c84c2a;
-}
-
-/* Projects grid */
-.grid {
+.cards {
   display: flex;
   gap: 1rem;
   flex-wrap: wrap;
 }
-
 .card {
-  background: white;
+  background: #fff;
   padding: 1.5rem;
-  border-radius: 6px;
   flex: 1 1 calc(50% - 1rem);
+  border-radius: 6px;
   box-shadow: 0 2px 6px rgba(0,0,0,0.1);
   transition: transform 0.2s;
 }
-
 .card:hover {
   transform: translateY(-5px);
+}
+.timeline {
+  list-style: none;
+}
+.timeline li {
+  margin-bottom: 0.8rem;
+}
+.timeline strong {
+  color: #004080;
 }
