@@ -10995,7 +10995,7 @@ body {
   }
 }
 
-/* Style pour les boutons du menu */
+/* Style des boutons du menu */
 .navbar-nav .nav-item button {
     background: none;
     border: none;
@@ -11009,9 +11009,17 @@ body {
     display: block;
     width: 100%;
     text-align: left;
+    font-family: "Saira Extra Condensed", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    font-size: 0.9rem;
+    transition: all 0.3s ease;
 }
 
-/* Style pour le bouton de la photo */
+/* Effet au survol */
+.navbar-nav .nav-item button:hover {
+    color: #bd5d38; /* Couleur au survol, comme avant */
+}
+
+/* Style du bouton de la photo */
 .navbar-brand.smooth-scroll {
     background: none;
     border: none;
@@ -11019,4 +11027,22 @@ body {
     padding: 0;
     color: inherit;
     text-decoration: none;
+    display: flex;
+    align-items: center;
+}
+
+/* Style de l'image dans le bouton */
+.navbar-brand.smooth-scroll img {
+    max-width: 10rem;
+    border: 0.5rem solid rgba(255, 255, 255, 0.2);
+}
+
+/* Style du menu */
+.navbar-nav {
+    margin-top: 0.5rem;
+}
+
+/* Style du texte dans le menu */
+.navbar-nav .nav-item {
+    padding: 0.25rem 0;
 }
