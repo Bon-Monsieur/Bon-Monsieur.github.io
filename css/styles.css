@@ -10960,12 +10960,12 @@ p.lead {
     background-repeat: no-repeat;
     background-attachment: fixed;
     min-height: 100vh;
-    width: 100%; /* Remplace width: 100vw; par width: 100%; */
+    width: 100%; 
     margin: 0;
     padding: 0;
     display: flex;
     justify-content: center;
-    align-items: flex-start; /* Pour mettre le carré blanc en haut */
+    align-items: flex-start; 
 }
 
 .resume-section-content {
@@ -10973,7 +10973,7 @@ p.lead {
     padding: 30px;
     border-radius: 10px;
     max-width: 800px;
-    /* margin: 0 auto;  <-- à retirer pour éviter le centrage horizontal par rapport à la page */
+     
     text-align: left;
 }
 
