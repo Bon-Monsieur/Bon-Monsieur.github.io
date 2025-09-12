@@ -10959,7 +10959,7 @@ body {
 .resume-section {
     background-image: url('../assets/img/fd.jpg');
     background-size: cover;
-    background-position: center bottom;
+    background-position: center top;
     background-repeat: no-repeat;
     background-attachment: fixed;
     min-height: 100vh;
