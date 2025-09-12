@@ -10956,16 +10956,13 @@ p.lead {
 .resume-section {
     background-image: url('../assets/img/fd.jpg');
     background-size: cover;
-    background-position: center ;
+    background-position: center bottom;
     background-repeat: no-repeat;
     background-attachment: fixed;
     min-height: 100vh;
-    width: 100%; 
+    width: 100%;
     margin: 0;
     padding: 0;
-    display: flex;
-    justify-content: center;
-    align-items: flex-start; 
 }
 
 .resume-section-content {
