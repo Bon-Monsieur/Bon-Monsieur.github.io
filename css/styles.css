@@ -10994,3 +10994,7 @@ body {
     margin: 0;
   }
 }
+
+.smooth-scroll {
+    cursor: pointer;
+}
