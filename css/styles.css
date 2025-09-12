@@ -10952,11 +10952,14 @@ p.lead {
   font-size: 3rem;
 }
 
+body {
+    overflow-x: hidden;
+}
 
 .resume-section {
     background-image: url('../assets/img/fd.jpg');
     background-size: cover;
-    background-position: bottom;
+    background-position: center bottom;
     background-repeat: no-repeat;
     background-attachment: fixed;
     min-height: 100vh;
@@ -10966,13 +10969,11 @@ p.lead {
 }
 
 .resume-section-content {
-    max-width: 800px;
-    width: 90%;                 /* pour que ça reste responsive */
+    background-color: rgba(255, 255, 255, 0.85);
     padding: 30px;
     border-radius: 10px;
-    background-color: rgba(255, 255, 255, 0.85);
-    box-sizing: border-box;
-    text-align: left;         /* optionnel, si tu veux centrer le texte */
+    max-width: 800px;
+    margin: 0 auto;
 }
 
 
@@ -10992,15 +10993,4 @@ p.lead {
     width: 100%;
     margin: 0;
   }
-}
-html, body {
-    height: 100%;
-    margin: 0;
-}
-
-body {
-    background-image: url('ton-image.png');
-    background-size: cover; /* couvre tout le conteneur */
-    background-repeat: no-repeat;
-    background-position: center top; /* ajuste selon besoin */
 }
