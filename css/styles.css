@@ -10940,6 +10940,10 @@ p.lead {
   background-color: #bd5d38;
 }
 
+.social-icons {
+  display: flex;
+  justify-content: flex-end; /* pousse le contenu à droite */
+}
 
 .dev-icons {
   font-size: 3rem;
