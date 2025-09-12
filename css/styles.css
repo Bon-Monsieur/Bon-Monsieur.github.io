@@ -10952,9 +10952,6 @@ p.lead {
   font-size: 3rem;
 }
 
-body {
-    overflow-x: hidden;
-}
 
 /* Centrage du contenu dans la zone à droite, hors bande orange */
 .container-fluid {
@@ -11009,10 +11006,14 @@ body {
     margin: 0;
   }
 }
-
 html, body {
-  width: 100%;
-  margin: 0;
-  padding: 0;
-  overflow-x: hidden; /* déjà présent, mais on le remet pour sécurité */
+    height: 100%;
+    margin: 0;
+}
+
+body {
+    background-image: url('ton-image.png');
+    background-size: cover; /* couvre tout le conteneur */
+    background-repeat: no-repeat;
+    background-position: center top; /* ajuste selon besoin */
 }
