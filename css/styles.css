@@ -10953,17 +10953,6 @@ p.lead {
 }
 
 
-/* Centrage du contenu dans la zone à droite, hors bande orange */
-.container-fluid {
-    margin-left: 17rem; /* largeur de la bande orange */
-    width: calc(100vw - 17rem);
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    /* Pas de justify-content ici pour garder le scroll normal */
-}
-
 .resume-section {
     background-image: url('../assets/img/fd.jpg');
     background-size: cover;
