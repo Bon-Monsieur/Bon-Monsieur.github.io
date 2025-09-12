@@ -10956,6 +10956,14 @@ section.resume-section {
 section.resume-section .resume-section-content {
   width: 100%;
 }
+.resume-section {
+    background-image: url('../assets/img/fd.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed; /* Optionnel : pour un effet fixe */
+}
+
 
 @media (min-width: 768px) {
   section.resume-section {
