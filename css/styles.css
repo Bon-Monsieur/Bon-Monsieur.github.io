@@ -10976,8 +10976,18 @@ body {
     margin: 0 auto;
 }
 
-
-
+section.resume-section {
+  display: flex;
+  align-items: center;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+  max-width: 75rem;
+}
+section.resume-section .resume-section-content {
+  width: 100%;
+}
 
 @media (min-width: 768px) {
   section.resume-section {
@@ -10990,7 +11000,5 @@ body {
     padding-right: 3rem;
     padding-top: 5rem;
     padding-bottom: 5rem;
-    width: 100%;
-    margin: 0;
   }
 }
