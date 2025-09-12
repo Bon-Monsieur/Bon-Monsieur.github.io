@@ -8,7 +8,6 @@
 // 
 
 window.addEventListener('DOMContentLoaded', event => {
-
     // Activate Bootstrap scrollspy on the main nav element
     const sideNav = document.body.querySelector('#sideNav');
     if (sideNav) {
@@ -31,4 +30,24 @@ window.addEventListener('DOMContentLoaded', event => {
         });
     });
 
+    // Ajoute le code pour le défilement fluide sans # dans l'URL
+    document.querySelectorAll('.smooth-scroll').forEach(anchor => {
+        anchor.addEventListener('click', function(e) {
+            e.preventDefault(); // Empêche le comportement par défaut du lien
+
+            // Récupère l'identifiant de la section cible
+            const targetId = this.getAttribute('data-target');
+            const targetElement = document.getElementById(targetId);
+
+            // Fait défiler la page jusqu'à l'élément cible
+            if (targetElement) {
+                targetElement.scrollIntoView({
+                    behavior: 'smooth' // Défilement fluide
+                });
+            }
+        });
+    });
 });
+
+
+
