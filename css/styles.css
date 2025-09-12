@@ -10976,6 +10976,9 @@ body {
     margin: 0 auto;
 }
 
+
+
+
 @media (min-width: 768px) {
   section.resume-section {
     min-height: 100vh;
@@ -10987,5 +10990,6 @@ body {
     padding-right: 3rem;
     padding-top: 5rem;
     padding-bottom: 5rem;
-  }
-}
+    width: 100%;
+    margin: 0;
+  }}
