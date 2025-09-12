@@ -10921,9 +10921,9 @@ p.lead {
     display: block;
   }
 }
-.social-icons .social-icon {
-  display: flex;
-  justify-content: flex-end;
+.social-icons.social-icon {
+  display: inline-flex;
+  justify-content: center;
   height: 3.5rem;
   width: 3.5rem;
   background-color: #495057;
@@ -10932,11 +10932,15 @@ p.lead {
   font-size: 1.5rem;
   margin-right: 1.5rem;
 }
-.social-icons .social-icon:last-child {
+.social-icons.social-icon:last-child {
   margin-right: 0;
 }
-.social-icons .social-icon:hover {
+.social-icons.social-icon:hover {
   background-color: #bd5d38;
+}
+.social-icons {
+  display: flex;
+  justify-content: flex-end; /* pousse le contenu à droite */
 }
 
 .dev-icons {
