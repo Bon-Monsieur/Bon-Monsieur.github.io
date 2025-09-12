@@ -10961,7 +10961,7 @@ body {
     background-size: cover;
     background-position: center bottom; /* mieux que bottom */
     background-repeat: no-repeat;
-    background-attachment: fixed;
+    background-attachment: fixed; /* tu peux essayer 'scroll' si le problème persiste */
     min-height: 100vh;
     width: 100vw; /* utiliser vw pour s'assurer que ça prend 100% de la vue */
     margin: 0;
