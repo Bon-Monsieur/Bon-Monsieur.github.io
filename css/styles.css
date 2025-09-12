@@ -10977,6 +10977,8 @@ body {
 }
 
 
+
+
 @media (min-width: 768px) {
   section.resume-section {
     min-height: 100vh;
@@ -10991,17 +10993,4 @@ body {
     width: 100%;
     margin: 0;
   }
-}
-
-.navbar-nav .nav-item .nav-link {
-  font-weight: 800;
-  letter-spacing: 0.05rem;
-  text-transform: uppercase;
-
-  /* Ajouts pour rendre le bouton identique au lien */
-  background: none;
-  border: none;
-  color: inherit; /* garde la couleur du texte */
-  cursor: pointer;
-  padding: 0; /* évite le padding par défaut */
 }
