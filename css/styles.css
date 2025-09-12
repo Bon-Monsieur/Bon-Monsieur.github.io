@@ -10944,18 +10944,6 @@ p.lead {
   font-size: 3rem;
 }
 
-section.resume-section {
-  display: flex;
-  align-items: center;
-  padding-left: 1rem;
-  padding-right: 1rem;
-  padding-top: 5rem;
-  padding-bottom: 5rem;
-  max-width: 75rem;
-}
-section.resume-section .resume-section-content {
-  width: 100%;
-}
 body {
     overflow-x: hidden;
 }
@@ -10982,6 +10970,7 @@ body {
 
 
 
+
 @media (min-width: 768px) {
   section.resume-section {
     min-height: 100vh;
@@ -10996,4 +10985,6 @@ body {
     width: 100%;
     margin: 0;
   }
+}
+
 }
