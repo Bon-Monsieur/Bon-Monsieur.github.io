@@ -10957,9 +10957,6 @@ body {
 }
 
 .resume-section {
-    display: flex;              /* active flexbox */
-    justify-content: center;    /* centre horizontalement */
-    align-items: center;        /* centre verticalement */
     background-image: url('../assets/img/fd.jpg');
     background-size: cover;
     background-position: center bottom;
@@ -10972,15 +10969,12 @@ body {
 }
 
 .resume-section-content {
-    max-width: 800px;
-    width: 90%;                 /* pour que ça reste responsive */
+    background-color: rgba(255, 255, 255, 0.85);
     padding: 30px;
     border-radius: 10px;
-    background-color: rgba(255, 255, 255, 0.85);
-    box-sizing: border-box;
-    text-align: center;         /* optionnel, si tu veux centrer le texte */
+    max-width: 800px;
+    margin: 0 auto;
 }
-
 
 
 
