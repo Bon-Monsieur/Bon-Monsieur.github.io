@@ -10956,7 +10956,7 @@ p.lead {
 .resume-section {
     background-image: url('../assets/img/fd.jpg');
     background-size: cover;
-    background-position: center 10%;
+    background-position: center bottom;
     background-repeat: no-repeat;
     background-attachment: fixed;
     min-height: 100vh;
