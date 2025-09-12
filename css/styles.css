@@ -10956,21 +10956,29 @@ body {
     overflow-x: hidden;
 }
 
+/* Centrage du contenu dans la zone à droite, hors bande orange */
+.container-fluid {
+    margin-left: 17rem; /* largeur de la bande orange */
+    width: calc(100vw - 17rem);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* Pas de justify-content ici pour garder le scroll normal */
+}
+
 .resume-section {
-    background-image: url('../assets/img/fd.jpg');
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
     background-size: cover;
     background-position: center bottom;
     background-repeat: no-repeat;
     background-attachment: fixed;
-    min-height: 100vh;
-    width: 100vw;
+    width: 100%;
     margin: 0;
     padding: 0;
-
-    /* Ajout pour centrer le contenu */
-    display: flex;
-    align-items: center;
-    justify-content: center;
 }
 
 .resume-section-content {
