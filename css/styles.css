@@ -10956,13 +10956,30 @@ section.resume-section {
 section.resume-section .resume-section-content {
   width: 100%;
 }
+body {
+    overflow-x: hidden;
+}
+
 .resume-section {
     background-image: url('../assets/img/fd.jpg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    background-attachment: fixed; /* Optionnel : pour un effet fixe */
+    background-attachment: fixed;
+    min-height: 100vh;
+    width: 100%;
+    margin: 0;
+    padding: 0;
 }
+
+.resume-section-content {
+    background-color: rgba(255, 255, 255, 0.85);
+    padding: 30px;
+    border-radius: 10px;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
 
 
 @media (min-width: 768px) {
@@ -10976,5 +10993,7 @@ section.resume-section .resume-section-content {
     padding-right: 3rem;
     padding-top: 5rem;
     padding-bottom: 5rem;
+    width: 100%;
+    margin: 0;
   }
 }
