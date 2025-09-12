@@ -10951,7 +10951,7 @@ body {
 .resume-section {
     background-image: url('../assets/img/fd.jpg');
     background-size: cover;
-    background-position: center;
+    background-position: center 20%;
     background-repeat: no-repeat;
     background-attachment: fixed;
     min-height: 100vh;
@@ -10985,6 +10985,4 @@ body {
     width: 100%;
     margin: 0;
   }
-}
-
 }
