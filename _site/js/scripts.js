@@ -54,7 +54,7 @@ window.addEventListener('DOMContentLoaded', event => {
             } else {
                 // Sinon -> stocker la cible et rediriger vers index.html
                 sessionStorage.setItem('scrollToSection', targetId);
-                window.location.href = 'index.html';
+                window.location.href = '/';
             }
         });
     });
