@@ -11009,3 +11009,40 @@ body {
     margin: 0;
   }
 }
+/* --- Mise en valeur de la typographie de toutes les sections --- */
+
+/* Titres principaux de section */
+.resume-section h2 {
+    font-family: 'Saira Extra Condensed', sans-serif;
+    font-weight: 700;
+    font-size: 3rem;          /* taille globale plus grande */
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: #2c3e50;           /* ou var(--bs-primary) si tu veux ton bleu Bootstrap */
+    margin-bottom: 2rem;
+}
+
+/* Sous-titres (par ex. formations, projets) */
+.resume-section h3 {
+    font-family: 'Saira Extra Condensed', sans-serif;
+    font-weight: 600;
+    font-size: 1.75rem;
+    color: #34495e;
+    margin-bottom: 0.5rem;
+}
+
+/* Texte courant */
+.resume-section .resume-section-content {
+    font-family: 'Muli', sans-serif;
+    font-size: 1.1rem;        /* un peu plus grand pour toutes les sections */
+    line-height: 1.7;
+    color: #222;              /* contraste renforcé */
+    background-color: rgba(255, 255, 255, 0.92);
+    box-shadow: 0 6px 20px rgba(0,0,0,0.2);
+    padding: 30px;
+    border-radius: 10px;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+
