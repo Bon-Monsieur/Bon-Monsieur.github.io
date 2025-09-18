@@ -10975,8 +10975,10 @@ body {
 
 /* Style spécifique à la page Shape From Shading */
 .resume-section.sfs {
-    background-image: url('../assets/img/fd-sfs.png'); /* <-- mets ici ton autre image */
+    background-color: #ffffff; /* blanc */
+    background-image: none;    /* on enlève toute image */
 }
+
 
 /* Style spécifique à la page Stage */
 .resume-section.stage {
