@@ -11063,3 +11063,8 @@ body {
 @media (max-width:767.98px){
   .formation-lieu { margin-left: 0.5rem; } /* mobile: moins d’indent */
 }
+
+.date-col {
+  width: 250px;    /* ajustez selon vos besoins */
+  text-align: right;
+}
