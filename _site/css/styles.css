@@ -10961,110 +10961,113 @@ body {
 }
 
 /* Style générique (par défaut) */
+/* ============================
+   SECTIONS GÉNÉRIQUES
+   ============================ */
 .resume-section {
-    background-image: url('../assets/img/fd.jpg'); /* fond par défaut */
+    background-image: url('../assets/img/fd.jpg'); /* image de fond par défaut */
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     background-attachment: fixed;
-    min-height: 100vh;
+
+    /* Hauteur flexible : plus de min-height forcé */
     width: 100%;
     margin: 0;
-    padding: 0;
+    padding: 4% 4%;        /* padding en % : s’adapte à l’écran */
 }
 
-/* Style spécifique à la page Shape From Shading */
-.resume-section.sfs {
-    background-color: #0b58ae;
-    background-image: none;    /* on enlève toute image */
-}
-
-
-/* Style spécifique à la page Stage */
-.resume-section.stage {
-    background-color: #ffffff; /* blanc */
-    background-image: none;    /* on enlève toute image */
-}
-
-/* Style spécifique à la page Projet L3 */
+/* === Variantes sans image (pages spécifiques) === */
+.resume-section.sfs,
+.resume-section.stage,
 .resume-section.l3 {
-    background-color: #ffffff; /* blanc */
-    background-image: none;    /* on enlève toute image */
+    background-color: #0b58ae;
+    background-image: none;
 }
 
-/* Contenu au-dessus du fond */
+/* ============================
+   BLOC DE CONTENU
+   ============================ */
 .resume-section-content {
-    background-color: rgba(255, 255, 255, 0.85);
-    padding: 1.5em;
-    border-radius: 10px;
-    max-width: 650px;
+    background-color: rgba(255, 255, 255, 0.88);
+    max-width: 620px;          /* largeur réduite (avant 800px) */
     margin: 0 auto;
+    padding: 1.2em;            /* moins d’espace interne */
+    border-radius: 10px;
+    box-shadow: 0 4px 16px rgba(0,0,0,0.15);
+
+    /* Texte global un peu plus petit */
+    font-family: 'Muli', sans-serif;
+    font-size: 0.95rem;
+    line-height: 1.55;
+    color: #222;
+    margin-bottom: 5%;
 }
 
-/* Responsiveness */
-@media (min-width: 768px) {
-  section.resume-section {
-    min-height: 100vh;
-  }
-}
-@media (min-width: 992px) {
-  section.resume-section {
-    padding-left: 3rem;
-    padding-right: 3rem;
-    padding-top: 5rem;
-    padding-bottom: 5rem;
-    width: 100%;
-    margin: 0;
-  }
-}
-/* --- Mise en valeur de la typographie de toutes les sections --- */
-
-/* Titres principaux de section */
+/* ============================
+   TYPOGRAPHIE
+   ============================ */
 .resume-section h2 {
     font-family: 'Saira Extra Condensed', sans-serif;
     font-weight: 700;
-    font-size: 3rem;          /* taille globale plus grande */
+    font-size: 2.4rem;   /* avant 3rem */
     letter-spacing: 1px;
     text-transform: uppercase;
-    color: #2c3e50;           /* ou var(--bs-primary) si tu veux ton bleu Bootstrap */
-    margin-bottom: 2rem;
+    color: #2c3e50;
+    margin-bottom: 1.5rem;
 }
 
-/* Sous-titres (par ex. formations, projets) */
 .resume-section h3 {
     font-family: 'Saira Extra Condensed', sans-serif;
     font-weight: 600;
-    font-size: 1.75rem;
+    font-size: 1.3rem;   /* avant 1.75rem */
     color: #34495e;
     margin-bottom: 0.5rem;
 }
 
-/* Texte courant */
-.resume-section .resume-section-content {
-    font-family: 'Muli', sans-serif;
-    font-size: 1.1rem;        /* un peu plus grand pour toutes les sections */
-    line-height: 1.7;
-    color: #222;              /* contraste renforcé */
-    background-color: rgba(255, 255, 255, 0.92);
-    box-shadow: 0 6px 20px rgba(0,0,0,0.2);
-    padding: 30px;
-    border-radius: 10px;
-    max-width: 800px;
-    margin: 0 auto;
+/* ============================
+   FORMATION & DATES
+   ============================ */
+.formation-icon { 
+    margin-right: .5rem; 
+    color: #007bff; 
 }
-
-
-.formation-icon { margin-right: .5rem; color:#007bff; }
 .formation-lieu {
-  display:block;
-  margin-left: 1.2rem;   /* augmentez si vous voulez plus de décalage */
-  color: #6c757d;
+    display: block;
+    margin-left: 1rem;
+    color: #6c757d;
 }
-@media (max-width:767.98px){
-  .formation-lieu { margin-left: 0.5rem; } /* mobile: moins d’indent */
+.date-col {
+    width: 260px;    /* un peu moins large */
+    text-align: right;
 }
 
-.date-col {
-  width: 290px;    /* ajustez selon vos besoins */
-  text-align: right;
+/* ============================
+   RESPONSIVE
+   ============================ */
+@media (min-width: 992px) {
+  .resume-section {
+    padding: 5% 6%;
+  }
+  .resume-section-content {
+    max-width: 660px;   /* un poil plus large sur grands écrans */
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .resume-section {
+    padding: 6% 4%;
+  }
+  .resume-section-content {
+    max-width: 90%;     /* quasi plein écran sur mobile */
+    font-size: 0.95rem;
+  }
+  .formation-lieu { margin-left: 0.5rem; }
+}
+
+/* Réduit le texte "lead" uniquement à l'intérieur de .resume-section-content */
+.resume-section-content .lead {
+    font-size: 1rem;     /* par ex. même taille que le reste du texte */
+    line-height: 1.6;    /* adapte le line-height si besoin */
 }
