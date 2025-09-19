@@ -10975,7 +10975,7 @@ body {
 
 /* Style spécifique à la page Shape From Shading */
 .resume-section.sfs {
-    background-color: #ffffff; /* blanc */
+    background-color: #0b58ae;
     background-image: none;    /* on enlève toute image */
 }
 
@@ -10995,9 +10995,9 @@ body {
 /* Contenu au-dessus du fond */
 .resume-section-content {
     background-color: rgba(255, 255, 255, 0.85);
-    padding: 30px;
+    padding: 1.5em;
     border-radius: 10px;
-    max-width: 800px;
+    max-width: 650px;
     margin: 0 auto;
 }
 
