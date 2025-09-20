@@ -11087,15 +11087,17 @@ body {
 
 /* cible précisément le bloc blanc enfant direct */
 #projet-stage > .resume-section-content {
-  margin-bottom: 0 !important; /* ou 1.5rem si tu veux un petit espace */
-  /* si tu veux également réduire le padding interne : */
-  /* padding-bottom: 1rem !important; */
+  max-width: 60%;          /* réduit la largeur du carré */
+  margin: 1.5em auto;        /* centré horizontalement avec un petit espace vertical */
+  padding: 0.8em;            /* réduit le padding interne */
+  font-size: 0.9rem;         /* réduit la taille du texte pour garder les proportions */
+  line-height: 1.5;          /* ajuste le line-height pour garder la lisibilité */
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: fixed;
-  background-color: rgba(255,255,255,0.85);
-  box-shadow: 0 4px 16px rgba(0,0,0,0.25); /* ombre un peu plus douce */
+  background-color: rgba(255,255,255,0.7); /* plus transparent pour mieux voir le fond */
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15); /* ombre plus légère */
 }
 
 #projet-sfs {
@@ -11106,15 +11108,17 @@ body {
 
 /* cible précisément le bloc blanc enfant direct */
 #projet-sfs > .resume-section-content {
-  margin-bottom: 0 !important; /* ou 1.5rem si tu veux un petit espace */
-  /* si tu veux également réduire le padding interne : */
-  /* padding-bottom: 1rem !important; */
+  max-width: 60%;          /* réduit la largeur du carré */
+  margin: 1.5em auto;        /* centré horizontalement avec un petit espace vertical */
+  padding: 0.8em;            /* réduit le padding interne */
+  font-size: 0.9rem;         /* réduit la taille du texte pour garder les proportions */
+  line-height: 1.5;          /* ajuste le line-height pour garder la lisibilité */
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: fixed;
-  background-color: rgba(255,255,255,0.85);
-  box-shadow: 0 4px 16px rgba(0,0,0,0.25); /* ombre un peu plus douce */
+  background-color: rgba(255,255,255,0.7); /* plus transparent pour mieux voir le fond */
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15); /* ombre plus légère */
 }
 
 
@@ -11124,18 +11128,19 @@ body {
   min-height: 100vh !important;
 }
 
-/* cible précisément le bloc blanc enfant direct */
 #projet-l3 > .resume-section-content {
-  margin-bottom: 0 !important; /* ou 1.5rem si tu veux un petit espace */
-  /* si tu veux également réduire le padding interne : */
-  /* padding-bottom: 1rem !important; */
+  max-width: 60%;          /* réduit la largeur du carré */
+  margin: 1.5em auto;        /* centré horizontalement avec un petit espace vertical */
+  padding: 0.8em;            /* réduit le padding interne */
+  font-size: 0.9rem;         /* réduit la taille du texte pour garder les proportions */
+  line-height: 1.5;          /* ajuste le line-height pour garder la lisibilité */
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: fixed;
-  background-color: rgba(255,255,255,0.85);
-  box-shadow: 0 4px 16px rgba(0,0,0,0.25); /* ombre un peu plus douce */
-
-
+  background-color: rgba(255,255,255,0.7); /* plus transparent pour mieux voir le fond */
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15); /* ombre plus légère */
 }
+
+
 
