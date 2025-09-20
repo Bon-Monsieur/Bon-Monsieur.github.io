@@ -10977,14 +10977,17 @@ body {
     padding: 4% 4%;        /* padding en % : s’adapte à l’écran */
 }
 
-/* === Variantes sans image (pages spécifiques) === */
-.resume-section.sfs,
-.resume-section.l3 {
-    background-color: #0b58ae;
-    background-image: none;
-}
+/* === IMAGE FD === */
 .resume-section.stage{
-  background-image: url(../assets/img/test.jpg);
+  background-image: url(../assets/img/fd-stage.jpg);
+}
+
+.resume-section.sfs{
+  background-image: url(../assets/img/fd-sfs.jpg);
+}
+
+.resume-section.l3 {
+    background-image: url(../assets/img/fd-l3.jpg);
 }
 
 /* ============================
@@ -11087,9 +11090,52 @@ body {
   margin-bottom: 0 !important; /* ou 1.5rem si tu veux un petit espace */
   /* si tu veux également réduire le padding interne : */
   /* padding-bottom: 1rem !important; */
- background-size: cover;
+  background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: fixed;
+  background-color: rgba(255,255,255,0.85);
+  box-shadow: 0 4px 16px rgba(0,0,0,0.25); /* ombre un peu plus douce */
+}
+
+#projet-sfs {
+  padding-bottom: 0 !important;
+  margin-bottom: 0 !important;
+  min-height: 100vh !important;
+}
+
+/* cible précisément le bloc blanc enfant direct */
+#projet-sfs > .resume-section-content {
+  margin-bottom: 0 !important; /* ou 1.5rem si tu veux un petit espace */
+  /* si tu veux également réduire le padding interne : */
+  /* padding-bottom: 1rem !important; */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-color: rgba(255,255,255,0.85);
+  box-shadow: 0 4px 16px rgba(0,0,0,0.25); /* ombre un peu plus douce */
+}
+
+
+#projet-l3 {
+  padding-bottom: 0 !important;
+  margin-bottom: 0 !important;
+  min-height: 100vh !important;
+}
+
+/* cible précisément le bloc blanc enfant direct */
+#projet-l3 > .resume-section-content {
+  margin-bottom: 0 !important; /* ou 1.5rem si tu veux un petit espace */
+  /* si tu veux également réduire le padding interne : */
+  /* padding-bottom: 1rem !important; */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-color: rgba(255,255,255,0.85);
+  box-shadow: 0 4px 16px rgba(0,0,0,0.25); /* ombre un peu plus douce */
+
+
 }
 
