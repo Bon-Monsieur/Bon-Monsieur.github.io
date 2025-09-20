@@ -10979,10 +10979,12 @@ body {
 
 /* === Variantes sans image (pages spécifiques) === */
 .resume-section.sfs,
-.resume-section.stage,
 .resume-section.l3 {
     background-color: #0b58ae;
     background-image: none;
+}
+.resume-section.stage{
+  background-image: url(../assets/img/test.jpg);
 }
 
 /* ============================
@@ -11071,3 +11073,23 @@ body {
     font-size: 1rem;     /* par ex. même taille que le reste du texte */
     line-height: 1.6;    /* adapte le line-height si besoin */
 }
+
+/* === Fix spécifique à projet-stage.html ===
+   Place ceci en FIN de css/styles.css (ou dans <style> dans projet-stage.html) */
+#projet-stage {
+  padding-bottom: 0 !important;
+  margin-bottom: 0 !important;
+  min-height: 100vh !important;
+}
+
+/* cible précisément le bloc blanc enfant direct */
+#projet-stage > .resume-section-content {
+  margin-bottom: 0 !important; /* ou 1.5rem si tu veux un petit espace */
+  /* si tu veux également réduire le padding interne : */
+  /* padding-bottom: 1rem !important; */
+ background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
