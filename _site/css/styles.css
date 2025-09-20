@@ -11052,7 +11052,7 @@ body {
    ============================ */
 @media (min-width: 992px) {
   .resume-section {
-    padding: 5% 6%;
+    padding: 1% 2%;
   }
   .resume-section-content {
     max-width: 660px;   /* un poil plus large sur grands écrans */
