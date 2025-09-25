@@ -10991,7 +10991,11 @@ body {
 }
 
 .resume-section.expose {
-    background-image: url(../assets/img/IMG_20250726_0957362.jpg);
+    background-image: url(../assets/img/fd-expose.jpg);
+}
+
+.resume-section.estimation {
+    background-image: url(../assets/img/fd-estimation.jpg);
 }
 
 /* ============================
@@ -11155,6 +11159,26 @@ body {
 
 /* cible précisément le bloc blanc enfant direct */
 #expose > .resume-section-content {
+  max-width: 60%;          /* réduit la largeur du carré */
+  margin: 1.5em auto;        /* centré horizontalement avec un petit espace vertical */
+  padding: 0.8em;            /* réduit le padding interne */
+  font-size: 0.9rem;         /* réduit la taille du texte pour garder les proportions */
+  line-height: 1.5;          /* ajuste le line-height pour garder la lisibilité */
+  background-size: 150%;
+  background-position: 30% 70%;
+  background-attachment: fixed;
+  background-color: rgba(255,255,255,0.7); /* plus transparent pour mieux voir le fond */
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15); /* ombre plus légère */
+}
+
+#estimation {
+  padding-bottom: 0 !important;
+  margin-bottom: 0 !important;
+  min-height: 100vh !important;
+}
+
+/* cible précisément le bloc blanc enfant direct */
+#estimation > .resume-section-content {
   max-width: 60%;          /* réduit la largeur du carré */
   margin: 1.5em auto;        /* centré horizontalement avec un petit espace vertical */
   padding: 0.8em;            /* réduit le padding interne */
